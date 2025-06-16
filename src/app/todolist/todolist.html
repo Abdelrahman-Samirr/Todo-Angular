@@ -5,13 +5,13 @@
       <p>Let's get some work done!</p>
     </div>
     <div class="tasks">
-      @for (task of item; track task.id ){
-      <div class="task">
-        <div class="btn">
-          <button>Completed</button>
-          <button>Delete</button>
+      @for (task of items; track task.id ){
+      <div class="task" >
+        <div class="btns">
+          <button (click)="completedData(task.id)">Completed</button>
+          <button (click)="deleteData(task.id)">Delete</button>
         </div>
-        <p>{{task.title}}</p>
+        <p class="pending" [ngClass]=" {'completed' : task.status === 'completed'} ">{{task.title}}</p>
       </div>
       }@empty{
       <p>no tasks here</p>

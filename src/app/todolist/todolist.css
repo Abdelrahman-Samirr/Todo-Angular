@@ -28,8 +28,8 @@ h4 {
 .btns {
   display: flex;
   gap: 5px;
-  
 }
+
 .task {
   display: flex;
   gap: 20px;
@@ -41,18 +41,13 @@ button {
   border: none;
   border-radius: 3px;
   background-color: rgb(0, 0, 0);
-  color: #ffff;
+  color: white;
   cursor: pointer;
 }
 
-.pending {
-  background-color: rgba(0, 255, 255, 0.586);
+.task p {
+  background-color: aqua;
   padding: 7px 10px;
   border-radius: 5px;
   width: 40%;
-}
-
-.completed {
-  text-decoration: line-through solid  green;
-  background-color: rgb(169, 169, 169);
-}
+}/*# sourceMappingURL=todolist.css.map */

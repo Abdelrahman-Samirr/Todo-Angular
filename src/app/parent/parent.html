@@ -1,2 +1,2 @@
 <app-todoform (dataEvent)="receiveMessage($event)" />
-<app-todolist [item]="arr" />
+<app-todolist [items]="arr" (deleteEvent)="deleteTask($event)" />
