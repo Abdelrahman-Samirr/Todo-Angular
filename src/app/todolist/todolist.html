@@ -1,0 +1,21 @@
+<section>
+  <div class="container">
+    <div class="header">
+      <h4>TodoList</h4>
+      <p>Let's get some work done!</p>
+    </div>
+    <div class="tasks">
+      @for (task of item; track task.id ){
+      <div class="task">
+        <div class="btn">
+          <button>Completed</button>
+          <button>Delete</button>
+        </div>
+        <p>{{task.title}}</p>
+      </div>
+      }@empty{
+      <p>no tasks here</p>
+      }
+    </div>
+  </div>
+</section>

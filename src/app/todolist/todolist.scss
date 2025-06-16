@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+.header p {
+  font-size: 28px;
+  color: rgb(104, 104, 104);
+}
+
+.btn {
+  display: flex;
+  gap: 5px;
+}
+.task {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(122, 122, 122);
+}
+
+.task p {
+  background-color: aqua;
+  padding: 5px 10px;
+}
